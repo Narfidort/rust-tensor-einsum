@@ -10,6 +10,15 @@ This library provides a `Tensor` struct and a generalized `einsum` function that
 - String-based einsum notation (e.g., `"ij,jk->ik"`).
 - Helper methods for tensor creation and CSV export.
 
+## Theoretical Motivation
+
+This implementation explores the correspondence between **Tensor Contraction** and **Cut Elimination** in logic (specifically within the context of Categorical Semantics and Linear Logic).
+
+- **Transitivity as Contraction**: The composition of relations $R(x, y)$ and $S(y, z)$ to form $T(x, z)$ via $\exists y . (R(x, y) \land S(y, z))$ is computationally equivalent to matrix multiplication (or tensor contraction along index $y$).
+- **Cut Elimination**: In proof theory, eliminating a "Cut" (an intermediate lemma or concept) corresponds to contracting the shared index between two tensors representing the premises.
+
+This library serves as a computational playground to verify these structural correspondences using simple tensor operations.
+
 ## Usage
 
 You can run the included demo to see the tensor operations in action, including examples of:
