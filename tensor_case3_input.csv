@@ -1,0 +1,4 @@
+Subject,Object,Context,Value
+Alice,Bob,Official,1
+Bob,Charlie,Official,1
+Bob,Charlie,Private,1

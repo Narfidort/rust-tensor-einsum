@@ -1,0 +1,9 @@
+[package]
+name = "rust-tensor-einsum"
+version = "0.1.0"
+edition = "2021"
+description = "A minimal tensor library with einsum support implemented in Rust"
+license = "MIT"
+
+[dependencies]
+# No dependencies for the core library as requested
